@@ -47,8 +47,7 @@ server {
 	}
 
 	error_page 404 /404.html;
-	location /404 {
-		root /var/www/html;
+	location = /404.html {
 		internal
 	}
 }
