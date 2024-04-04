@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-from fabric.api import local
+from fabric.api import local, put, env, run
 from time import strftime
-from datetime import date
+from datetime import datetime
+from os.path import exists, isdir
 
 env.hosts = ['100.26.168.29', '54.173.39.101']
 
